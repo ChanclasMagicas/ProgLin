@@ -1,0 +1,50 @@
+\documentclass{article}
+
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+
+\title{MÉTODO SÍMPLEX}
+\author{ChanclasMágicas}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introducción}
+\label{sec:introduccion}
+
+El Método Simplex es un procedimiento iterativo que permite mejorar la
+solución de la función objetivo en cada paso. El proceso concluye
+cuando no es posible continuar mejorando dicho valor.
+Dicho método surge en 1947 por el matemático norteamericano George
+Dantzig.
+
+\section{Ejemplo}
+\label{sec:ejemplo}
+
+\begin{equation*}
+  \begin{aligned}
+    \text{Maximizar}    \quad  2x_1-2x_2\\
+    \text{sujeto a}    \quad &
+    \begin{aligned}
+      2x_1+x_2 & \leq 4 \\
+      x_1+x_2 & \leq 5\\
+      x_1,x_2 & \geq 0
+
+    \end{aligned}
+  \end{aligned}
+\end{equation*}
+
+El Tablero simplex queda como\\
+\begin{equation*}
+ 
+    \begin{aligned}
+      x_3 & = 4-2x_1-x_2 \\
+      x_4 & = 5-x_1-x_2\\
+
+  \end{aligned}
+\end{equation*}
+
+
+\end{document}
